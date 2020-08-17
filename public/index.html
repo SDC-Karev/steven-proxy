@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steam Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="background: #1b2838;">
+    <div>
+      <div class="media-window"></div>
+      <div class="right-col">
+        <div class="game-sidebar"></div>
+      </div>
+      <div class="left-col">
+        <div class="purchase-options"></div>
+        <div class="game-description"></div>
+        <div class="similar-games"></div>
+      </div>
+      <div class="reviews"></div>
+    </div>
+
+    <!-- Lead in React Components -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://localhost:3001/app.js"></script>
+    <script src="https://localhost:3002/app.js"></script>
+    <script src="https://localhost:3003/app.js"></script>
+    <script src="https://localhost:3004/app.js"></script>
+    <script src="https://localhost:3005/app.js"></script>
+    <script src="https://localhost:3006/app.js"></script>
+
+    <script>
+      ReactDOM.render(
+        React.createElement(MediaWindow),
+        document.getElementById('media-window')
+      );
+      ReactDOM.render(
+        React.createElement(GameInformationSidebar),
+        document.getElementById('game-sidebar')
+      );
+      ReactDOM.render(
+        React.createElement(PurchaseOptions),
+        document.getElementById('purchase-options')
+      );
+      ReactDOM.render(
+        React.createElement(GameDescription),
+        document.getElementById('game-description')
+      );
+      ReactDOM.render(
+        React.createElement(SimilarGames),
+        document.getElementById('similar-games')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('reviews')
+      );
+    </script>
+
+  </body>
+
+</html>
