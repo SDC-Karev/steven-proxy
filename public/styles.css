@@ -1,0 +1,23 @@
+body {
+  background: #1b2838;
+}
+
+.game-content-wrapper {
+  width: 940px;
+  margin: auto;
+  width: 50%;
+}
+
+.left-column {
+  width: 616px;
+  float: left;
+}
+.left-column-spacer {
+  height: 15px;
+}
+
+.right-column {
+  width: 308px;
+  float: right;
+  margin-left: 14px;
+}

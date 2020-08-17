@@ -3,33 +3,36 @@
   <head>
     <title>Steam Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"><link/>
   </head>
-  <body style="background: #1b2838;">
-    <div>
-      <div class="media-window"></div>
+  <body>
+    <div class="game-content-wrapper">
+      <div id="media-window"></div>
       <div class="right-col">
-        <div class="game-sidebar"></div>
+        <div id="game-sidebar"></div>
       </div>
       <div class="left-col">
-        <div class="purchase-options"></div>
-        <div class="game-description"></div>
-        <div class="similar-games"></div>
+        <div id="purchase-options"></div>
+        <div id="left-column-spacer"></div>
+        <div id="game-description"></div>
+        <div id="similar-games"></div>
       </div>
-      <div class="reviews"></div>
+      <div id="reviews"></div>
     </div>
 
     <!-- Lead in React Components -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://localhost:3001/app.js"></script>
-    <script src="https://localhost:3002/app.js"></script>
-    <script src="https://localhost:3003/app.js"></script>
-    <script src="https://localhost:3004/app.js"></script>
-    <script src="https://localhost:3005/app.js"></script>
-    <script src="https://localhost:3006/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script>
+    <!--<script src="https://localhost:3001/bundle.js"></script>
+    <script src="https://localhost:3003/bundle.js"></script>
+    <script src="https://localhost:3004/bundle.js"></script>
+    <script src="https://localhost:3005/bundle.js"></script>
+    <script src="https://localhost:3006/bundle.js"></script>-->
 
     <script>
-      ReactDOM.render(
+      console.log(Object.keys(window))
+      /*ReactDOM.render(
         React.createElement(MediaWindow),
         document.getElementById('media-window')
       );
@@ -37,10 +40,12 @@
         React.createElement(GameInformationSidebar),
         document.getElementById('game-sidebar')
       );
+      */
       ReactDOM.render(
-        React.createElement(PurchaseOptions),
+        React.createElement(PurchaseOptions.PurchaseOptions, {gameId: 5}),
         document.getElementById('purchase-options')
       );
+      /*
       ReactDOM.render(
         React.createElement(GameDescription),
         document.getElementById('game-description')
@@ -52,7 +57,7 @@
       ReactDOM.render(
         React.createElement(Reviews),
         document.getElementById('reviews')
-      );
+      );*/
     </script>
 
   </body>
