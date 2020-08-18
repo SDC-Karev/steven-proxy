@@ -7,58 +7,35 @@
   </head>
   <body>
     <div class="game-content-wrapper">
-      <div id="media-window"></div>
-      <div class="right-col">
-        <div id="game-sidebar"></div>
+      <div id="app"></div>
+      <div class="content-spacer"></div>
+      <div class="columns-wrapper">
+        <div class="right-col">
+          <div id="game-sidebar"></div>
+        </div>
+        <div class="left-col">
+          <div id="purchase-options"></div>
+          <div class="left-column-spacer"></div>
+          <div id="game-description"></div>
+          <div class="left-column-spacer"></div>
+          <div id="similar-games"></div>
+        </div>
       </div>
-      <div class="left-col">
-        <div id="purchase-options"></div>
-        <div id="left-column-spacer"></div>
-        <div id="game-description"></div>
-        <div id="similar-games"></div>
-      </div>
+      <div class="content-spacer"></div>
       <div id="reviews"></div>
     </div>
 
     <!-- Lead in React Components -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <!--<script src="https://localhost:3001/bundle.js"></script>
-    <script src="https://localhost:3003/bundle.js"></script>
-    <script src="https://localhost:3004/bundle.js"></script>
-    <script src="https://localhost:3005/bundle.js"></script>
-    <script src="https://localhost:3006/bundle.js"></script>-->
-
-    <script>
-      console.log(Object.keys(window))
-      /*ReactDOM.render(
-        React.createElement(MediaWindow),
-        document.getElementById('media-window')
-      );
-      ReactDOM.render(
-        React.createElement(GameInformationSidebar),
-        document.getElementById('game-sidebar')
-      );
-      */
-      ReactDOM.render(
-        React.createElement(PurchaseOptions.PurchaseOptions, {gameId: 5}),
-        document.getElementById('purchase-options')
-      );
-      /*
-      ReactDOM.render(
-        React.createElement(GameDescription),
-        document.getElementById('game-description')
-      );
-      ReactDOM.render(
-        React.createElement(SimilarGames),
-        document.getElementById('similar-games')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('reviews')
-      );*/
-    </script>
+    <script src="https://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <!--
+    <script src="http://localhost:3003/bundle.js"></script>
+    -->
+    <script src="http://localhost:3004/bundle.js"></script>
+    <script src="http://localhost:3005/bundle.js"></script>
+    <script src="http://localhost:3006/bundle.js"></script>
 
   </body>
 

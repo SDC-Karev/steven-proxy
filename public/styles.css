@@ -8,16 +8,26 @@ body {
   width: 50%;
 }
 
-.left-column {
+.content-spacer {
+  height: 15px;
+}
+
+.left-col {
   width: 616px;
   float: left;
 }
+
 .left-column-spacer {
   height: 15px;
 }
 
-.right-column {
+.column-wrapper {
+  margin-bottom: 100px;
+}
+
+.right-col {
   width: 308px;
   float: right;
   margin-left: 14px;
+  margin-bottom: 150px;
 }
