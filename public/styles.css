@@ -1,0 +1,49 @@
+body {
+  background: #1b2838;
+}
+
+.game-content-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.media-block {
+  position: relative;
+  display: block;
+}
+
+.column-wrapper {
+  position: relative;
+  display: block;
+}
+
+.content-spacer {
+  height: 15px;
+  display: block;
+}
+
+.left-col {
+  width: 616px;
+  margin-top: 16px;
+  float: left;
+  display: block;
+}
+
+.column-spacer {
+  height: 15px;
+}
+
+.right-col {
+  width: 308px;
+  display: block;
+  float: right;
+  margin-top: 16px;
+  margin-left: 14px;
+}
+
+.review-block {
+  border-top: 1px solid #000;
+  margin: bottom;
+}
