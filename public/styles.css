@@ -4,30 +4,46 @@ body {
 
 .game-content-wrapper {
   width: 940px;
-  margin: auto;
-  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.media-block {
+  position: relative;
+  display: block;
+}
+
+.column-wrapper {
+  position: relative;
+  display: block;
 }
 
 .content-spacer {
   height: 15px;
+  display: block;
 }
 
 .left-col {
   width: 616px;
+  margin-top: 16px;
   float: left;
+  display: block;
 }
 
-.left-column-spacer {
+.column-spacer {
   height: 15px;
-}
-
-.column-wrapper {
-  margin-bottom: 100px;
 }
 
 .right-col {
   width: 308px;
+  display: block;
   float: right;
+  margin-top: 16px;
   margin-left: 14px;
-  margin-bottom: 150px;
+}
+
+.review-block {
+  border-top: 1px solid #000;
+  margin: bottom;
 }
