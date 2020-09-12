@@ -1,2 +1,1 @@
-# tristan-proxy
-Proxy implementation 
+Proxy implementation
